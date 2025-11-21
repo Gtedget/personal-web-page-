@@ -3,51 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Web Page</title>
+    <title>Gtedget | Data Scientist</title>
     <link rel="stylesheet" href="styles/main.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(120deg, #f8fafc 0%, #e0e7ff 100%);
+            color: #22223b;
+            margin: 0;
+        }
+        header {
+            background: #3a3a5a;
+            color: #fff;
+            padding: 2rem 0 1rem 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        nav a {
+            color: #e0e7ff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #ffd166;
+        }
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 16px rgba(60,60,100,0.08);
+            padding: 2rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        h2 {
+            color: #3a3a5a;
+            margin-top: 2rem;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #e0e7ff;
+        }
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .projects ul {
+            padding-left: 1.2rem;
+        }
+        .contact {
+            margin-top: 2rem;
+            background: #e0e7ff;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        @media (max-width: 600px) {
+            main { padding: 1rem; }
+            .profile { flex-direction: column; gap: 1rem; }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Personal Web Page</h1>
+        <h1>Gtedget</h1>
+        <p>Data Scientist | AI & ML Specialist</p>
         <nav>
             <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#main-content">Main</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Professional Summary
-Highly skilled data scientist with extensive experience in applying data science techniques to health, physical, chemical, and biological datasets. Proficient in Python and R programming, with expertise in AI and machine learning (classification, clustering, regression, model selection, preprocessing, dimensionality reduction, and neural networks, leveraging large language models (LLMs using LangChain, Hugging Face)). Adept at QSAR modeling, Read-Across, PBPK, and IVIVE, with a proven ability to map and merge diverse datasets to address complex problems. Experienced in statistical analysis, data visualization, and drug development/testing, as well as generating detailed Google Analytics reports. Specialized in toxicity studies related to emissions, focusing on nanoscale emissions characterization for bioaccessibility and bioavailability studies. Skilled in spatiotemporal analyses using GIS platforms, integrating satellite, geochemical, and geophysical data for comprehensive data modeling and mining. Additionally, possess strong teaching experience in health informatics at the university level. Excellent communicator with robust problem-solving abilities, teamwork, adaptability, and time management skills. I consider myself a quick learner, adept at adapting to new technologies with ease.</p>
+        <section id="about" class="profile">
+            <img src="assets/profile.jpg" alt="Profile Photo" class="profile-img" onerror="this.style.display='none'">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Data scientist skilled in Python, R, and AI/ML. Specialized in toxicity prediction, QSAR modeling, and GIS analysis. Passionate about data-driven solutions and teaching.</p>
+            </div>
         </section>
-        <div id="main-content" class="three-columns">
-            <section id="projects">
-                <h2>Projects</h2>
-                <ul>
-                    <li><strong>Project 1:</strong> Machine Learning for Chemical Toxicity Prediction<br>
-                        Developed QSAR models for cytotoxicity prediction using XGBoost, LightGBM, Random Forest, and deep learning on Tox21 and ToxCast datasets.
-                    </li>
-                    <li><strong>Project 2:</strong> Chemical Carcinogenicity & Mutagenicity Prediction<br>
-                        Used Graph Neural Networks and deep learning to analyze molecular graph data for toxicological endpoints.
-                    </li>
-                    <li>
-                        <strong>Project 3:</strong> Chemical Similarity Calculator Tool<br>
-                        <em>Summary:</em> User-friendly tool for calculating chemical similarity between molecules.<br>
-                        <em>Tasks:</em>
-                        <ul>
-                            <li>Load a base dataset of chemicals (CSV file with SMILES, DTXSID, NAME, etc.).</li>
-                            <li>Accept user input for chemical identifiers (DTXSID, NAME, or SMILES).</li>
-                            <li>Allow users to select fingerprint types (ECFP, MACCS, Daylight, PubChem) and similarity metrics (Tanimoto, Cosine, Euclidean, CityBlock, Hamming).</li>
-                            <li>Calculate similarity scores between user-input chemicals and the base dataset.</li>
-                            <li>Display progress and allow saving results.</li>
-                        </ul>
-                        <em>Output:</em>
-                        <ul>
-                            <li>A CSV file listing each input chemical and its most similar chemicals from the base dataset, along with similarity scores and the method used.</li>
-                            <li>The output file can be customized and saved by the user.</li>
+        <section id="projects" class="projects">
+            <h2>Featured Projects</h2>
+            <ul>
+                <li><strong>Toxicity Prediction:</strong> QSAR models for chemical safety.</li>
+                <li><strong>Carcinogenicity Analysis:</strong> Graph neural networks for molecular data.</li>
+                <li><strong>Similarity Tool:</strong> Fast molecular comparison and reporting.</li>
+            </ul>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+        </section>
+    </main>
+</body>
+</html>
                         </ul>
                     </li>
                 </ul>
