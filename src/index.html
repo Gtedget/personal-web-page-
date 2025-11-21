@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Web Page</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Personal Web Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#main-content">Main</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Professional Summary
+Highly skilled data scientist with extensive experience in applying data science techniques to health, physical, chemical, and biological datasets. Proficient in Python and R programming, with expertise in AI and machine learning (classification, clustering, regression, model selection, preprocessing, dimensionality reduction, and neural networks, leveraging large language models (LLMs using LangChain, Hugging Face)). Adept at QSAR modeling, Read-Across, PBPK, and IVIVE, with a proven ability to map and merge diverse datasets to address complex problems. Experienced in statistical analysis, data visualization, and drug development/testing, as well as generating detailed Google Analytics reports. Specialized in toxicity studies related to emissions, focusing on nanoscale emissions characterization for bioaccessibility and bioavailability studies. Skilled in spatiotemporal analyses using GIS platforms, integrating satellite, geochemical, and geophysical data for comprehensive data modeling and mining. Additionally, possess strong teaching experience in health informatics at the university level. Excellent communicator with robust problem-solving abilities, teamwork, adaptability, and time management skills. I consider myself a quick learner, adept at adapting to new technologies with ease.</p>
+        </section>
+        <div id="main-content" class="three-columns">
+            <section id="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li><strong>Project 1:</strong> Machine Learning for Chemical Toxicity Prediction<br>
+                        Developed QSAR models for cytotoxicity prediction using XGBoost, LightGBM, Random Forest, and deep learning on Tox21 and ToxCast datasets.
+                    </li>
+                    <li><strong>Project 2:</strong> Chemical Carcinogenicity & Mutagenicity Prediction<br>
+                        Used Graph Neural Networks and deep learning to analyze molecular graph data for toxicological endpoints.
+                    </li>
+                    <li>
+                        <strong>Project 3:</strong> Chemical Similarity Calculator Tool<br>
+                        <em>Summary:</em> User-friendly tool for calculating chemical similarity between molecules.<br>
+                        <em>Tasks:</em>
+                        <ul>
+                            <li>Load a base dataset of chemicals (CSV file with SMILES, DTXSID, NAME, etc.).</li>
+                            <li>Accept user input for chemical identifiers (DTXSID, NAME, or SMILES).</li>
+                            <li>Allow users to select fingerprint types (ECFP, MACCS, Daylight, PubChem) and similarity metrics (Tanimoto, Cosine, Euclidean, CityBlock, Hamming).</li>
+                            <li>Calculate similarity scores between user-input chemicals and the base dataset.</li>
+                            <li>Display progress and allow saving results.</li>
+                        </ul>
+                        <em>Output:</em>
+                        <ul>
+                            <li>A CSV file listing each input chemical and its most similar chemicals from the base dataset, along with similarity scores and the method used.</li>
+                            <li>The output file can be customized and saved by the user.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section id="education">
+                <h2>Education & Work Experience</h2>
+                <h3>Educational Background</h3>
+                <ul>
+                    <li>Ph.D. Nanoscience (GPA 3.9/4.0), University of North Carolina at Greensboro, 2018</li>
+                    <li>M.Sc. Physics (GPA 4.0/4.0), North Carolina Agricultural and Technical State University, Greensboro, NC, 2013</li>
+                    <li>M.Sc. Information System Management (GIS) (8/10), University of Twente, ITC, Netherlands, 2005<br>
+                        <em>Thesis:</em> A GIS Data Model for the Interpretation of Multi-method Geophysical Data
+                    </li>
+                </ul>
+                <h3>Work Experience</h3>
+                <ul>
+                    <li>
+                        <strong>Computational Scientist</strong>, Inotiv, Research Triangle Park, NC (01/2023–Present)
+                        <ul>
+                            <li>Developed and applied ML models (XGBoost, LightGBM, RF, deep learning, CNNs, RNNs, PCA, Bayesian) for chemical toxicity prediction.</li>
+                            <li>Advanced computational toxicology & cheminformatics for hazard identification and reduction of animal testing.</li>
+                            <li>Built predictive models for on-target activity and ADME using QSAR and other ML techniques.</li>
+                            <li>Applied Bayesian analysis and ML to diverse data types for toxicological endpoint prediction.</li>
+                            <li>Engaged in PBPK modeling, AOP analysis, and high-throughput screening data analysis.</li>
+                            <li>Collaborated with environmental health scientists and managed code quality via Git/Bitbucket.</li>
+                            <li>Conducted Google Analytics for web optimization and tool enhancement.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>ORISE Postdoctoral Participant</strong>, US EPA, Research Triangle Park, NC (01/2020–10/2022)
+                        <ul>
+                            <li>Developed Python-based ML pipelines for emissions analysis during 3D printing.</li>
+                            <li>Analyzed VOC interactions with olfactory receptors using ML and deep learning.</li>
+                            <li>Processed emission data and generated publication-quality figures.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Graduate Research Assistant</strong>, UNC Greensboro, NC (01/2014–12/2018)
+                        <ul>
+                            <li>Developed nano-theranostics for brain tumor studies and analyzed protein expression in cancer cells.</li>
+                            <li>Studied nanoparticle dynamics via molecular simulations and statistical analysis.</li>
+                            <li>Trained students on lab equipment and data analysis techniques.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Graduate Research Assistant</strong>, North Carolina A&T State University, NC (08/2012–04/2013)
+                        <ul>
+                            <li>Measured and analyzed aerosol properties using LabView, MATLAB, and Python.</li>
+                            <li>Presented research at conferences and university colloquia.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>GIS Analyst, Visiting Scholar</strong>, Penn State University, PA (04/2010–10/2011)
+                        <ul>
+                            <li>Integrated geophysical data using ArcGIS, Geosoft, GMT; developed crustal thickness maps for Africa and Antarctica.</li>
+                            <li>Processed and geo-referenced satellite and vector data for advanced GIS projects.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>Teaching Experience</h3>
+                <ul>
+                    <li>
+                        <strong>Adjunct Faculty</strong>, Marshall University, WV (01/2019–05/2020)
+                        <ul>
+                            <li>Taught Healthcare Statistics, Electronic & Personal Health Records, and Quality & Performance Improvement.</li>
+                            <li>Designed assignments, graded coursework, and supported student learning in health informatics.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>Awards</h3>
+                <ul>
+                    <li>Dr. Waderan L. Kennedy Scholar, North Carolina A&T State University</li>
+                    <li>ORISE Postdoctoral Research Fellowship, US EPA</li>
+                    <li>Netherlands Fellowship Program (GIS & Remote Sensing)</li>
+                    <li>Full Scholarship, Physics Department, North Carolina A&T State University</li>
+                </ul>
+                <h3>Selected Publications & Presentations</h3>
+                <ul>
+                    <li>Tedla et al. 2024. ML-based cytotoxicity flags in Tox21/ToxCast assays. SOT 2024 (Poster)</li>
+                    <li>Borell et al. 2024. ML for chemical carcinogenicity. SOT 2024 (Poster)</li>
+                    <li>Tedla et al. 2023. Characterization of 3D printer filaments and emissions. Science of the Total Environment.</li>
+                    <li>Tedla et al. 2022. Human exposure to metals in 3D printing. Science of the Total Environment.</li>
+                    <li>Tedla et al. 2018. Dual-targeted Gd3N@C80 glioblastoma theranostics. Journal of Nanomaterials.</li>
+                    <li>Hughes et al. 2024. Simulated gastric leachate of 3D printer filaments. Toxicology in Vitro.</li>
+                    <li>Tedla et al. 2025. Predicting PFAS toxicity with GNNs. In preparation.</li>
+                </ul>
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>Programming: Python, R, SQL, KNIME, Linux, NLP, Hugging Face</li>
+                    <li>Cheminformatics: RDKit, OPERA, OECD Toolbox, Open Babel, CDK, ChemAxon, Biotransformer, OEchem, VEGA</li>
+                    <li>Toxicokinetics: PBPK, HTTK, IVIVE, pk-sim</li>
+                    <li>ML & Data Analysis: Classification, Clustering, Regression, Model Selection, Preprocessing, Dimensionality Reduction, Neural Networks, LLMs, LangChain, streamlit</li>
+                    <li>Molecular Modeling: NAMD, VMD, CHARMM, SYBYL, ChemSketch</li>
+                    <li>Visualization: Matplotlib, Seaborn, Tableau, Power BI</li>
+                    <li>Version Control: GitHub, Bitbucket; Cloud: Azure, AWS, IBM</li>
+                    <li>Databases: PubChem, ChEMBL, DrugBank, EPA Dashboard, MySQL, PostgreSQL, Oracle, SQL Server, NoSQL, Graph DBs</li>
+                    <li>Spatiotemporal Analysis: GIS platforms</li>
+                    <li>Bioinformatics: BLAST, Galaxy, FASTA/FASTQ/BAM/VCF, nextflow</li>
+                </ul>
+                <h3>Certifications</h3>
+                <ul>
+                    <li>Deep Learning with Python, Data Matters (UNC/NCDS), 2023</li>
+                    <li>Intermediate Python, Data Matters (UNC/NCDS), 2023</li>
+                    <li>Advanced Deep Learning & Neural Networks, LinkedIn Learning, 2020</li>
+                </ul>
+            </section>
+            <section id="blog">
+                <h2>Blog & Demos</h2>
+                <article>
+                    <h3>Latest Blog Post</h3>
+                    <p>Coming soon: Insights on chemical informatics and machine learning!</p>
+                </article>
+                <article>
+                    <h3>Project Demonstrations</h3>
+                    <ul>
+                        <li><a href="#">QSAR Model Demo</a></li>
+                        <li><a href="#">Chemical Similarity Calculator Demo</a></li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can reach me at: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 [Your Name]. All rights reserved.</p>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
